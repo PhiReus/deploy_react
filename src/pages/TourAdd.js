@@ -20,7 +20,7 @@ function TourAdd(props) {
   const handleSubmit = (data) => {
     TourModel.store(data)
       .then((res) => {
-        navigate("/");
+        navigate("/deploy_react");
       })
       .catch((err) => {
         console.error("Xảy ra lổi :", err);
