@@ -10,11 +10,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<TourList />} />
-          <Route path="/tours/:id/edit" element={<TourEdit />} />
-          <Route path="/tours/:id" element={<TourShow />} />
-          <Route path="/tours/create" element={<TourAdd />} />
-          <Route path="/tours/:id/delete" element={<TourDelete />} />
+          <Route path="deploy_react/" element={<TourList />} />
+          <Route path="deploy_react/tours/:id/edit" element={<TourEdit />} />
+          <Route path="deploy_react/tours/:id" element={<TourShow />} />
+          <Route path="deploy_react/tours/create" element={<TourAdd />} />
+          <Route path="deploy_react/tours/:id/delete" element={<TourDelete />} />
         </Routes>
       </BrowserRouter>
     </div>

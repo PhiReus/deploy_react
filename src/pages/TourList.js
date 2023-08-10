@@ -17,7 +17,7 @@ function TourList(props) {
   return (
     <div style={{ textAlign: "center" }}>
       <h1>Tour List</h1>
-      <Link to="/tours/create">Add</Link>
+      <a href="deploy_react/tours/create">Add</a>
       <table border={1} width={800} style={{ margin: "20px auto" }}>
         <thead>
           <tr>
@@ -33,12 +33,12 @@ function TourList(props) {
               <th>{tour.id}</th>
               <th>
                 {" "}
-                <Link to={"/tours/" + tour.id}>{tour.name}</Link>
+                <Link to={`/deploy_react/tours/${tour.id}`}>{tour.name}</Link>
               </th>
               <th>{tour.price}</th>
               <th>
-                <Link to={"/tours/" + tour.id + "/edit"}>Edit</Link>|
-                <Link to={"tours/" + tour.id + "/delete"}>Delete</Link>
+                <Link to={`/deploy_react/tours/${tour.id}/edit`}>Edit</Link>|
+                <Link to={`/deploy_react/tours/${tour.id}/delete`}>Delete</Link>
               </th>
             </tr>
           ))}
