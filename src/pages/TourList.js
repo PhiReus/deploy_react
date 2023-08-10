@@ -17,7 +17,7 @@ function TourList(props) {
   return (
     <div style={{ textAlign: "center" }}>
       <h1>Tour List</h1>
-      <a href="deploy_react/tours/create">Add</a>
+      <Link to={`/deploy_react/tours/create`}>Add</Link>
       <table border={1} width={800} style={{ margin: "20px auto" }}>
         <thead>
           <tr>
